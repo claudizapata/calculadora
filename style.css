@@ -1,0 +1,64 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    margin: 0;
+    background-color: rgb(215, 208, 208);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 0;
+}
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);/*80px es el ancho de las columnas*/
+    grid-template-rows: 160px repeat(5, 75px);/*160px de altura para la primera fila porque está la pantalla*/
+    background-color: rgb(145, 145, 212);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 15px 10px 0px 5px rgb(141, 137, 142);
+    
+}
+.pantalla{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: right;
+    grid-column: 1 / -1;
+    padding: 16px;
+    background-color: black;
+    margin: 10px 10px 20px;
+    border-radius: 32px;
+    box-shadow: 0px 0px 0px 10px aqua;
+    color: white;
+    font-size: 2rem;
+}
+.valor-superior{
+    font-size: 3rem;
+}
+.col-2{
+    grid-column: span 2;
+
+}
+.col-2nro{
+    grid-column: span 2;
+}
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 2rem;
+    border: none;
+    background-color: rgb(141, 137, 142);
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+    color: white;
+
+}
+button:active{
+    background-color: aqua;
+}
